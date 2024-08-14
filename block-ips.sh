@@ -31,7 +31,7 @@ function block_ips {
     IP_LIST=$(curl -s 'https://raw.githubusercontent.com/desprdo/hetzner_cloud-init/main/abuse-ip-list.ipv4')
 
     if [ $? -ne 0 ]; then
-        echo "Failed to fetch the IP-Ranges list. Please contact @Kiya6955"
+        echo "Failed to fetch the IP-Ranges list"
         exit 1
     fi
 
