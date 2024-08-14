@@ -48,4 +48,9 @@ runcmd:
   - iptables-save
   - ufw allow 22
   - ufw enable
+  - wget -q -O /tmp/setup_script.sh https://raw.githubusercontent.com/desprdo/hetzner_cloud-init/main/block-ips.sh
+  - chmod +x /tmp/setup_script.sh
+  - /tmp/setup_script.sh
   - reboot
+
+  
