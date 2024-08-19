@@ -33,7 +33,7 @@ runcmd:
   - iptables -A OUTPUT -o eth0 -d 127.0.0.0/8 -j DROP
   - iptables -A OUTPUT -o eth0 -d 169.254.0.0/16 -j DROP
   - iptables -A OUTPUT -o eth0 -d 192.0.2.0/24 -j DROP
-  - iptables -A OUTPUT -o eth0 -d 198.18.0.0/15 -j DROP
+  - iptables -A OUTPUT -o eth0 -d 198.18.0.0/24 -j DROP
   - iptables -A OUTPUT -o eth0 -d 224.0.0.0/4 -j DROP
   - iptables -A OUTPUT -o eth0 -d 240.0.0.0/4 -j DROP
   - iptables -A OUTPUT -o eth0 -d 203.0.113.0/24 -j DROP 
