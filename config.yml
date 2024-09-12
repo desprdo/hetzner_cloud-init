@@ -29,7 +29,6 @@ runcmd:
   - iptables -A OUTPUT -p tcp -s 0/0 -d 173.245.48.0/20 -j DROP
   - iptables -A OUTPUT -p tcp -s 0/0 -d 192.0.2.0/24 -j DROP
   - iptables -A OUTPUT -o eth0 -d 169.254.0.0/24 -j DROP
-  - iptables -A OUTPUT -o eth0 -d 127.0.0.0/8 -j DROP
   - iptables -A OUTPUT -o eth0 -d 169.254.0.0/16 -j DROP
   - iptables -A OUTPUT -o eth0 -d 192.0.2.0/24 -j DROP
   - iptables -A OUTPUT -o eth0 -d 198.18.0.0/24 -j DROP
