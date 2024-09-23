@@ -2,8 +2,8 @@
 packages:
   - fail2ban
   - ufw
-package_update: true
-package_upgrade: true
+# package_update: true
+# package_upgrade: true
 runcmd:
   - printf "[sshd]\nenabled = true\nbanaction = iptables-multiport" > /etc/fail2ban/jail.local
   - systemctl enable fail2ban
@@ -52,6 +52,6 @@ runcmd:
   - iptables-save
   - ufw allow 22
   - ufw enable
-  - reboot
+  # - reboot
 
   
