@@ -52,6 +52,6 @@ runcmd:
   - iptables-save
   - ufw allow 22
   - ufw enable
-  # - reboot
+  - reboot
 
   
